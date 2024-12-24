@@ -24,9 +24,8 @@ exports.storeData = async (req, res) => {
     await googleSheetsService.appendDataToSheet(spreadsheetId, sheetName, data);
     return res.status(200).json({ success: true, message: "Data stored!" });
   } catch (error) {
-    console.error("Error writing to Google Sheets:", error);
     return res
       .status(500)
-      .json({ success: false, message: "Somethig went wrong!" });
+      .json({ success: false, message: error.message });
   }
 };
