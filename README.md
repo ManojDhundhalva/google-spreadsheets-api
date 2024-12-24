@@ -22,6 +22,7 @@ Before using the API, make sure you have the following:
     - `GOOGLE_CLIENT_EMAIL`: The email of your Google Service Account.
     - `GOOGLE_PRIVATE_KEY`: The private key associated with the Service Account.
     - `PORT`: The port for the server to run on (default is `8000`).
+4. Add the `GOOGLE_CLIENT_EMAIL` as a collaborator to the targeted spreadsheet.
 
 ## API Endpoints
 
